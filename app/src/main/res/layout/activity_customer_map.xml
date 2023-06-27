@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".driver_map_Activity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Customer_map_Activity" />
+
+    <ImageButton
+        android:id="@+id/swttings_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="111dp"
+        android:src="@drawable/edit_status"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:src="@drawable/edit_status" />
+
+    <ImageButton
+        android:id="@+id/logout_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/edit_profile"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:src="@drawable/edit_profile" />
+
+    <Button
+        android:id="@+id/call_driver"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="-8dp"
+        android:fontFamily="monospace"
+        android:text="Call a Driver"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
